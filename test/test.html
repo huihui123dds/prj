@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="n1">
+        <select v-model="eq">
+            <option value="+">加</option>
+            <option value="-">减</option>
+            <option value="*">乘</option>
+            <option value="/">除</option>
+        </select>
+        <input type="text" v-model="n2">
+        <input type="button" value="=" @click="yunsuan">
+        <input type="text" v-model="result">
+    </div>
+    <script>
+        const vm = new Vue({
+            el:'#app',
+            data:{
+                n1: 1,
+                n2: 2,
+                result: 3,
+                eq: '-',
+            },
+            methods: {
+                yunsuan() {
+
+                }
+            }
+        })
+    </script>
+</body>
+</html>

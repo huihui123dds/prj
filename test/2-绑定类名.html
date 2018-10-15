@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+    <style>
+        .size{
+            font-size: 30px;
+        }
+        .style{
+            font-style: italic;
+        }
+        .thin{
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <h1 :class="['size','style', 'thin']">函数函数实话实说</h1>
+</div>
+<script>
+    const vm = new Vue({
+        el:'#app',
+        data:{
+
+        },
+        methods: {
+
+        }
+    })
+</script>
+</body>
+</html>
